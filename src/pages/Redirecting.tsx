@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import logo from "../assets/images/logo.svg";
+import right from "../assets/images/right.png";
 
 const Redirecting = () => {
   const [count, setCount] = useState(5);
@@ -19,7 +21,7 @@ const Redirecting = () => {
       <div className="h-full flex justify-center items-center pt-[5rem]">
         <div className="max-w-[450px] flex flex-col text-center items-center">
           <div className="w-[3.2rem]">
-            <img src="src/assets/right.png" alt="right logo" />
+            <img src={right} alt="right logo" />
           </div>
           <h1 className="text-2xl font-Grace text-green-600 pt-[2rem]">
             Success Submitted
@@ -42,7 +44,7 @@ const RedirectNavbar = () => {
   return (
     <div className="flex justify-between p-3 rounded-full items-center ">
       <div>
-        <img src="src/assets/logo.svg" alt="logo" width={"130px"} />
+        <img src={logo} alt="logo" width={"130px"} />
       </div>
     </div>
   );

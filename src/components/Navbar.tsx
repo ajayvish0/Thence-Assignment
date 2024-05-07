@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logo from "../assets/images/logo.svg";
 
 const Navbar = ({ title }: { title: string }) => {
   return (
@@ -8,7 +9,7 @@ const Navbar = ({ title }: { title: string }) => {
       }`}
     >
       <div>
-        <img src="src/assets/logo.svg" alt="logo" width={"130px"} />
+        <img src={logo} alt="logo" width={"130px"} />
       </div>
       <div className="flex items-center">
         {title === "" ? (
@@ -30,7 +31,7 @@ const Navbar = ({ title }: { title: string }) => {
           <div className=" mr-[5rem]">
             <Link
               to="/"
-              className=" rounded-full border-2 px-4  py-2 text-xl    "
+              className=" rounded-full border-2 px-4  py-2 text-xl hover:bg-zinc-100   "
             >
               x
             </Link>

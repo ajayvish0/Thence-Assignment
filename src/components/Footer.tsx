@@ -13,10 +13,10 @@ const Footer = () => {
         <h1>Talup 2023. All rights reserved</h1>
       </div>
       <div className="flex items-center gap-x-[3rem] pr-[2rem]">
-        <Link to="/thence" className="underline ">
+        <Link to="/" className="underline ">
           Terms & Conditions
         </Link>
-        <Link to="/thence" className="underline ">
+        <Link to="/" className="underline ">
           Privacy Policy
         </Link>
       </div>

@@ -1,8 +1,10 @@
+import shock from "../assets/images/shocking1.png";
+import spark from "../assets/images/spark.png";
 const LeftComponent = () => {
   return (
     <div className="relative  ">
       <img
-        src="src/assets/shocking1.png"
+        src={shock}
         alt="girl"
         className="rounded-[2.5rem]  h-[600px] w-[550px]  "
       />
@@ -66,7 +68,7 @@ function L1() {
     <div className="w-[270px]  p-[1.5rem]  relative   bg-white shadow-md rounded-[2rem]  border-2 ">
       <h1 className="text-6xl font-semibold pt-1 ">40%</h1>
       <img
-        src="src/assets/spark.png"
+        src={spark}
         alt="spark"
         className="absolute top-[-2rem] left-[-1rem]"
       />

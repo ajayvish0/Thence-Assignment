@@ -1,4 +1,7 @@
 import { useState } from "react";
+import Union from "../assets/images/Union.png";
+import Plus from "../assets/images/plus.png";
+import minus from "../assets/images/minus.png";
 
 type questionType = {
   heading?: string;
@@ -46,7 +49,7 @@ const Questions = () => {
           <h1 className="text-5xl font-semibold "> Ask Questions</h1>
         </div>
         <div className="relative top-[4rem] right-[3rem]">
-          <img src="src/assets/Union.png" alt="union" className="" />
+          <img src={Union} alt="union" className="" />
         </div>
       </div>
       <div className="h-full w-full py-[2rem] px-[4rem]">
@@ -79,13 +82,9 @@ function RightPanel() {
                 }}
               >
                 {openPanels[index] ? (
-                  <img
-                    src="src/assets/minus.png"
-                    alt="minus.png"
-                    className=" "
-                  />
+                  <img src={minus} alt="minus.png" className=" " />
                 ) : (
-                  <img src="src/assets/plus.png" alt="plus" className=" " />
+                  <img src={Plus} alt="plus" className=" " />
                 )}
               </button>
             </div>
