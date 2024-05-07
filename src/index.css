@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+  }
+}
+
+@layer components {
+  .container {
+    @apply flex flex-nowrap overflow-hidden bg-[#f1f1f1];
+  }
+  .item {
+    @apply min-w-[100%] w-[100%] h-[20rem] flex  justify-center items-center;
+    transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
+}
